@@ -91,3 +91,101 @@ a{
     width: 85%;
 }
 
+.shortcut-icon:hover{
+    background-color: transparent;
+    transform: scale(1.5);
+}
+
+.search-area{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.input-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    background-color: #45454e;
+    padding: 3px 10px;
+    border-radius: 30px;
+}
+
+.input-group img{
+    width: 30px;
+}
+
+.input-control{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 150px;
+    height: 40px;
+}
+
+.input-group input{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 500px;
+    height: 40px;
+}
+
+.search{
+    padding: 13px 20px;
+    display: flex;
+    align-items: center;
+    border: 3px;
+    background-color: #45454e;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.search img{
+    width: 20px;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.link{
+    background-color: #45454e;
+    width: 400px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    border-radius: 8px;
+    transition: 300ms all;
+    cursor: pointer;
+}
+
+.link:hover{
+    transform: scale(1.02);
+    background-color: #606061;
+}
+
+.link img{
+    width: 30px;
+    margin: 0 10px; 
+}
+
+.text .text-header{
+    color: #fff;
+    font-size: 14px;
+
+}
+.text .url{
+    color: #ffffff7f;
+    font-size: 12px;
+}
+
+
