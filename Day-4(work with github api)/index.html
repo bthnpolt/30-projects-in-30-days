@@ -1,21 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work with githup api</title>
+    <title>Work with Github api workshoop</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-        <h1>Github Api ile Çalışmak</h1>
+        <h1 class="header">Github Api ile Çalışmak</h1>
+        <button class="theme-btn">Light</button>
         <div class="searchBox">
-            <input type="text" id="searchInput" placeholder="Githup kullanıcı adı" autocomplete="off">
-            <button id="search-btn" onclick="searchGitHub()">Getir</button>
-            
+            <input type="text" id="searchInput" autocomplete="off" placeholder="Github kullanıcı adı">
+            <button class="get-btn" onclick="getGithubProfile()">Getir</button>
         </div>
-        <div id="result" class="details"></div>
+
+        <div class="details-container">
+            <!-- <div class="details-container-1">
+                <div class="details-container-1-img">
+                    <img src="img.png" alt="avatar">
+                </div>
+                <div class="details-container-1-text">
+                    <div class="name"></div>
+                    <div class="username">
+                        <a href="" target="_blank">@bthnpolt</a>
+                    </div>
+                </div>
+                <div class="details-container-1-bio">
+                    <div class="bio">Senior Frontend Developer | Team Leader</div>
+                </div>
+            </div>
+
+            <div class="details-container-2">
+                <div class="details-container-2-row">
+                    <span class="details-container-2-stats-name">Hesap Oluşturma Tarihi:</span>
+                    <span id="created-at" class="details-container-2-stats-value">2023-07-12</span>
+                </div>
+
+                <div class="details-container-2-row">
+                    <span class="details-container-2-stats-name">Son Güncelleme Tarihi:</span>
+                    <span id="update-at" class="details-container-2-stats-value">2024-09-11</span>
+                </div>
+
+                <div class="details-container-2-row">
+                    <span class="details-container-2-stats-name">Public Repo Sayısı: </span>
+                    <span class="details-container-2-stats-value">12</span>
+                </div>
+
+                <div class="details-container-2-row">
+                    <span class="details-container-2-stats-name">Takipçi Sayısı:</span>
+                    <span class="details-container-2-stats-value">5</span>
+                </div>
+
+                <div class="details-container-2-row">
+                    <span class="details-container-2-stats-name">Takip Edilen Sayısı:</span>
+                    <span class="details-container-2-stats-value">9</span>
+                </div>
+
+
+            </div>
+
+             <div class="details-container-3">
+                <div class="details-container-3-media">
+                    <p>
+                        <span class="details-container-3-media-value">Konum bilgisi yok!</span>
+                    </p>
+    
+                    <p>
+                        <span class="details-container-3-media-value">Şirket bilgisi yok!</span>
+                    </p>
+    
+                    <p>
+                        <span class="details-container-3-media-value">Twitter bilgisi yok!</span>
+                    </p>
+    
+                    <p>
+                        <span class="details-container-3-media-value">Mail bilgisi yok!</span>
+                    </p>
+                </div>
+            </div> -->
+        </div>
+
+
+
     </div>
     <script src="app.js"></script>
 </body>
+
 </html>

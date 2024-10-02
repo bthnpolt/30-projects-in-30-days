@@ -1,131 +1,199 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root{
+    --clr-bcg:#1a212d;
+    --clr-font:#fff;
+    --clr-primary:#675aef;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
-    background-color: #1a212d;
-    color: #fff;
+    height: 100vh;
+    background-color: var(--clr-bcg);
+    color: var(--clr-font);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    transition: 300ms all linear;
+
+}
+
+.dark-theme{
+    --clr-bcg: #fff;
+    --clr-font:	#000000;
+    --clr-primary:#a9a9a9;
 }
 
 .container{
- width: 42rem;
- padding: 30px 22px;
+    width: 42rem;
+    padding: 30px 22px
 }
 
-h1{
+.header{
     margin-bottom: 20px;
-    text-align: center;
     font-weight: 500px;
+    text-align: center;
+}
+
+.theme-btn{
+    position: absolute;
+    top: 5%;
+    left: 80%;
+    width: 60px;
+    font-size: 17px;
+    border: none;
+    background-color: var(--clr-primary);
+    color:var(--clr-font);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 300ms all ease-in;
+}
+
+.theme-btn:hover{
+    background-color: transparent;
 }
 
 .searchBox{
-    background-color: #161922;
+    background-color:  #161922;;
+    padding: 7px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
-    border: 1px solid #999;
+    border: 1px solid var(--clr-font);
     border-radius: 6px;
 }
 
 .searchBox input{
-    background-color: transparent;
-    outline: none;
-    border: transparent;
-    color: #fff;
     width: 80%;
-    font-size: 17px;
-}
-
-.searchBox button{
-    background-color: #675aef;
-    color: #fff;
-    padding: 5px 10px;
+    padding: 5px;
+    background-color: transparent;
     border: none;
     outline: none;
-    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+
+}
+
+.get-btn{
+    padding: 3px 5px;
+    background-color: var(--clr-primary);
+    color: var(--clr-font);
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
     cursor: pointer;
-    font-size: 17px;
     transition: 300ms all ease;
 }
 
-.searchBox button:hover{
-    background-color: transparent;
+.get-btn:hover{
+    background-color: var(--clr-bcg);
 }
 
-.details{
+.details-container{
+    border: 1px solid var(--clr-font);
+    width: 100%;
     margin-top: 20px;
-    background-color: #161922;
-    padding: 20px 25px;
-    border: 1px solid #fff;
     border-radius: 6px;
     display: none;
 }
 
-.profile{
+.details-container-1{
+    width: 30%;
+    height: 300px;
+}
+
+.details-container-2{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 300px;
 }
 
-.profile-image{
-    height: 100px;
-    width: 150px;
-    margin-right: 10px;
-    border-radius: 50%;
-    overflow: hidden;
+.details-container-3{
+    width: 30%;
+    height: 300px;
 }
 
-.profile-image img{
+.details-container-1-img{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+}
+
+.details-container-1-img img{
     width: 100%;
     height: 100%;
+    border-radius: 50%;
 }
 
- .profile-details{
-    padding: 10px;
-    width: 25rem;
- }
-
- .username{
-    font-size: 13px;
-    color: #675afe;
- }
-
- .bio{
-    font-size: 14px;
-    margin-top: 10px;
- }
-
- .stats{
-    background-color: #20232c;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px 0;
-    margin-top: 20px;
+.details-container-1-text{
     text-align: center;
-    border: 1px solid #999;
-    border-radius: 6px;
- }
- 
- .media{
-    display: flex;
-    flex-wrap:wrap;
-    /* margin-top: 20px; */
- }
+}
 
- .media p{
-    margin-bottom: 10px;
-    width: 100%;
+.details-container-1-bio{
+    margin-top: 5px;
+    text-align: center;
+}
+.bio{
+    font-size: 10px;
+}
+
+.name{
+    font-weight:bold;
+}
+
+.username a{
+    color: var(--clr-primary);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.details-container-2-row{
+    width: 75%;
     display: flex;
-    align-items: center;
+    justify-content:space-between;
+}
+.details-container-2-stats-name{
+    margin-bottom: 10px;
     font-size: 13px;
- }
- 
+    font-weight: bold;
+}
+
+.details-container-2-stats-value{
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 600px;
+}
+
+.details-container-3-media{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-container-3 p{
+    margin-top: 20px;
+}
+
+.details-container-3-media-value{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
