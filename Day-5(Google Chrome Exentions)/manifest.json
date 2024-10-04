@@ -1,0 +1,11 @@
+{
+    "name": "Custom Exention",
+    "version": "1.0.0",
+    "description": "Bu eklenti eğitim amaçlı yapılmıştır.",
+    "manifest_version": "3",
+    "author": "Batuhan Polat",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "icon"
+    }
+}
