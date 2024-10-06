@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Step Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="form1">
+            <h3>Hesap Oluştur</h3>
+            <input type="text" placeholder="Adınız...">
+            <input type="text" placeholder="Soyadınız...">
+            <input type="email" placeholder="E-mail adresiniz...">
+            <div class="btn-box">
+                <button type="button" id="next1">İleri</button>
+            </div>
+        </form>
+
+        <form id="form2">
+            <h3>Hesap Oluştur</h3>
+            <input type="text" placeholder="Telefon numaranız..." >
+            <input type="text" placeholder="Linkedln profil linkiniz...">
+            <input type="text" placeholder="Github linkiniz..." >
+            <div class="btn-box">
+                <button type="button" id="back1" >Geri</button>
+                <button type="button" id="next2" >İleri</button>
+            </div>
+        </form>
+
+        <form id="form3">
+            <h3>Hesap Oluştur</h3>
+            <input type="text" placeholder="Kullanıcı adı giriniz...">
+            <input type="password" placeholder="Parola oluşturunuz...">
+            <input type="password" placeholder="Parola tekrarı...">
+            <div class="btn-box">
+                <button type="button" id="back2">Geri</button>
+                <button type="button" id="submit">Gönder </button>
+            </div>
+        </form>
+
+        <div class="step-row">
+            <div class="progress"></div>
+            <div class="step-col"><small>Adım 1</small></div>
+            <div class="step-col"><small>Adım 2</small></div>
+            <div class="step-col"><small>Adım 3</small></div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
