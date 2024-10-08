@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html{
+    font-family: 'Poppins', sans-serif ;
+}
+
+:root{
+    --primary: #007fff;
+    --secondary: #6f7e8c;
+    --hover:#f5f5f5;
+    --text:#212121;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--primary);
+}
+
+.box{
+    display: flex;
+    background-color: var(--hover);
+    padding: 24px;
+    border-radius: 20px;
+}
+
+.input__wrapper{
+    position: relative;
+    padding: 15px 0 0;
+}
+
+.input__field{
+    border: none;
+    border-bottom: 2px solid var(--secondary);
+    outline: none;
+    font-size: 16px;
+    padding: 4px 0;
+    padding-right: 30px;
+    background-color: transparent;
+    transition: border-color 0.2s;
+}
+
+.input__field::placeholder{
+    color: transparent;
+}
+
+.input__field:placeholder-shown ~ .input__label{
+    font-size: 16px;
+    top: 20px;
+}
+
+label,
+.input__field:focus ~ .input__label{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -1px;
+    transition: 0.5s all;
+}
+
+.input__field:focus ~ .input__label{
+    color: var(--primary);
+}
+
+.input__field:focus{
+    border-bottom: 2px solid var(--primary);
+}
+
+.input__icon{
+    position: absolute;
+    bottom: 0;
+    right: -11px;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.input__icon:hover{
+    border-radius: 50%;
+    background-color: var(--hover);
+}
