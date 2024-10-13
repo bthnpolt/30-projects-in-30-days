@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- ! Font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ! Font-awesome cdn -->
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+        <div class="input-container">
+            <input type="text" placeholder="görev giriniz..."  id="todoInput" autocomplete="off">
+            <button class="add-btn" onclick="Addtodo.addTodo()">
+                <i class="fas fa-plus"></i>
+            </button>
+            <button class="edit-btn">
+                <i class="fas fa-pen-to-square"></i>
+            </button>
+        </div>
+
+        <ul id="todoList">
+           
+        </ul>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>

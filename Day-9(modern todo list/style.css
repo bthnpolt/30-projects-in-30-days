@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --primary-color:#3498db;
+    --secondary-color:#2ecc71;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color))
+}
+
+.container{
+    width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1{
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.input-container{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input[type = "text"]{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    flex:1;
+}
+
+button{
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    transition: 300ms all;
+}
+
+button:hover{
+    background-color: var(--secondary-color);
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    animation: fadeIn 0.5s ease;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+span{
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-right: 10px;
+    text-overflow: ellipsis;
+}
+
+.completed span{
+    text-decoration: line-through;
+    color: #999;
+}
+
+.completed button{
+    color: #e74c3c;
+}
+.edit-btn{
+    display: none;
+}
+
+@keyframes fadeIn {
+    from{
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from{
+        
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+
+
+
+
+
+
+/* ! Mobile */
+
+@media (max-width: 576px ) {
+    .container{
+        width: 80%;
+    }
+
+}
